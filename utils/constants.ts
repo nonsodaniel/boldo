@@ -46,3 +46,8 @@ export const newsData: NewsData[] = [
     userPic: "/post3-circle.png",
   },
 ];
+
+export const footerLandingsData = ["Home", "Product", "Services"];
+
+export const footerResourcesData = ["Blog", "Product", "Services"];
+export const footerCompanyData = ["Home", "Career", "Services"];
