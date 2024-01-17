@@ -1,7 +1,7 @@
 import { footerCompanyData, footerLandingsData } from "@/utils/constants";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
@@ -9,12 +9,7 @@ const Footer = () => {
       <footer className="pt-10 lg:px-[60px] xl:px-[100px]">
         <div className="flex flex-col lg:flex-row items-start justify-between px-5 lg:px-0">
           <div className="flex flex-col gap-6 w-full lg:w-1/3">
-            <div className="flex items-center gap-2">
-              <Image src="/logoo.svg" alt="logo" width={24} height={36} />
-              <h2 className="text-2xl lg:text-3xl font-bold text-[#0A2640]">
-                Boldo
-              </h2>
-            </div>
+            <Logo />
             <p className="text-base pr-[4rem] lg:text-lg font-normal text-[#777777] leading-6">
               Social media validation business model canvas graphical user
               interface launch party creative facebook iPad twitter.

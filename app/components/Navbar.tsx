@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -12,10 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between px-5 pt-[52px] lg:px-[60px] xl:px-[100px]">
-      <div className="flex items-center gap-[10px]">
-        <Image src={"/logoo.svg"} alt="logo" width={24} height={36} />
-        <h2 className="text-[42px] font-bold text-[#0A2640]">Boldo</h2>
-      </div>
+      <Logo />
 
       <div className="lg:hidden mb-[10px]">
         <button
