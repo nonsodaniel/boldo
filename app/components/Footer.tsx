@@ -5,12 +5,14 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="pt-10 lg:px-10 xl:px-20">
+      <footer className="pt-10 lg:px-[60px] xl:px-[100px]">
         <div className="flex flex-col lg:flex-row items-start justify-between px-5 lg:px-0">
           <div className="flex flex-col gap-6 w-full lg:w-1/3">
             <div className="flex items-center gap-2">
               <Image src="/logoo.svg" alt="logo" width={24} height={36} />
-              <h2 className="text-2xl lg:text-3xl font-bold text-[#0A2640]">Boldo</h2>
+              <h2 className="text-2xl lg:text-3xl font-bold text-[#0A2640]">
+                Boldo
+              </h2>
             </div>
             <p className="text-base lg:text-lg font-normal text-[#777777] leading-6">
               Social media validation business model canvas graphical user
@@ -25,17 +27,23 @@ const Footer = () => {
               <ul className="mt-4 lg:mt-6 flex flex-col gap-4">
                 <li>
                   <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">Home</p>
+                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                      Home
+                    </p>
                   </Link>
                 </li>
                 <li>
                   <Link href="#">
-                    <p className="text-bpse lg:text-lg font-normpl text-[#777777] hover:underline">Products</p>
+                    <p className="text-bpse lg:text-lg font-normpl text-[#777777] hover:underline">
+                      Products
+                    </p>
                   </Link>
                 </li>
                 <li>
                   <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">Services</p>
+                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                      Services
+                    </p>
                   </Link>
                 </li>
               </ul>
@@ -47,17 +55,23 @@ const Footer = () => {
               <ul className="mt-4 lg:mt-6 flex flex-col gap-4">
                 <li>
                   <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">Home</p>
+                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                      Home
+                    </p>
                   </Link>
                 </li>
                 <li>
                   <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">Careers</p>
+                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                      Careers
+                    </p>
                   </Link>
                 </li>
                 <li>
                   <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">Services</p>
+                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                      Services
+                    </p>
                   </Link>
                 </li>
               </ul>
@@ -69,17 +83,23 @@ const Footer = () => {
               <ul className="mt-4 lg:mt-6 flex flex-col gap-4">
                 <li>
                   <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">Blog</p>
+                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                      Blog
+                    </p>
                   </Link>
                 </li>
                 <li>
                   <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">Products</p>
+                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                      Products
+                    </p>
                   </Link>
                 </li>
                 <li>
                   <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">Services</p>
+                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                      Services
+                    </p>
                   </Link>
                 </li>
               </ul>

@@ -6,8 +6,6 @@ import LatestNews from "../components/LatestNews";
 import Subscribe from "../components/Subscribe";
 
 const BlogPage = () => {
-
-
   return (
     <>
       <div className="w-full h-full block">
@@ -17,19 +15,13 @@ const BlogPage = () => {
             <h6 className="text-[20px] font-normal text-[#0A2640] leading-[32px]">
               Blog
             </h6>
-            <h1 className="text-[64px] font-normal text-[#0A2640] leading-[84px]">
+            <h1 className="text-[64px] px-1 font-normal text-[#0A2640] leading-[84px]">
               Thoughts and words
             </h1>
           </div>
           <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-[100px] mt-[60px] border-b-[#0A2640] border-b pb-[72px]">
-            <div  className="lg:w-[400px] xl:w-[550px] ">
-            <Image
-              src={"/head.png"}
-              alt="head"
-              width={550}
-              height={386}
-             
-            />
+            <div className="lg:w-[400px] xl:w-[550px] px-3">
+              <Image src={"/head.png"} alt="head" width={550} height={386} />
             </div>
             <div className="">
               <div className="flex items-center gap-[12px]">
@@ -59,7 +51,7 @@ const BlogPage = () => {
           </div>
 
           <LatestNews />
-          <Subscribe/>
+          <Subscribe />
         </div>
         <Footer />
       </div>

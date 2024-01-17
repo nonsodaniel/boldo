@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,16 +11,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between pt-[52px] lg:px-[60px] xl:px-[100px]">
+    <nav className="flex items-center justify-between px-5 pt-[52px] lg:px-[60px] xl:px-[100px]">
       <div className="flex items-center gap-[10px]">
         <Image src={"/logoo.svg"} alt="logo" width={24} height={36} />
         <h2 className="text-[42px] font-bold text-[#0A2640]">Boldo</h2>
       </div>
 
-      <div className="lg:hidden">
+      <div className="lg:hidden mb-[10px]">
         <button
           onClick={toggleMenu}
-          className="text-[24px] text-[#0A2640] focus:outline-none"
+          className="text-[30px] text-[#0A2640] focus:outline-none"
         >
           &#8801;
         </button>
@@ -28,30 +28,23 @@ const Navbar = () => {
 
       <ul
         className={`lg:flex items-center gap-8 pt-5 ${
-          isMenuOpen ? "flex flex-col absolute top-[90px] left-0 right-0 bg-white" : "hidden"
+          isMenuOpen
+            ? "flex flex-col absolute top-[155px] left-0 right-0 bg-white"
+            : "hidden"
         }`}
       >
         <li>
-          <Link
-            className="text-[16px] font-semibold text-[#0A2640]"
-            href={"#"}
-          >
+          <Link className="text-[16px] font-semibold text-[#0A2640]" href={"#"}>
             Product
           </Link>
         </li>
         <li>
-          <Link
-            className="text-[16px] font-semibold text-[#0A2640]"
-            href={"#"}
-          >
+          <Link className="text-[16px] font-semibold text-[#0A2640]" href={"#"}>
             Services
           </Link>
         </li>
         <li>
-          <Link
-            className="text-[16px] font-semibold text-[#0A2640]"
-            href={"#"}
-          >
+          <Link className="text-[16px] font-semibold text-[#0A2640]" href={"#"}>
             About
           </Link>
         </li>
