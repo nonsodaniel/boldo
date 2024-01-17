@@ -1,3 +1,4 @@
+import { footerCompanyData, footerLandingsData } from "@/utils/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -14,7 +15,7 @@ const Footer = () => {
                 Boldo
               </h2>
             </div>
-            <p className="text-base lg:text-lg font-normal text-[#777777] leading-6">
+            <p className="text-base pr-[4rem] lg:text-lg font-normal text-[#777777] leading-6">
               Social media validation business model canvas graphical user
               interface launch party creative facebook iPad twitter.
             </p>
@@ -25,27 +26,15 @@ const Footer = () => {
                 Landings
               </h2>
               <ul className="mt-4 lg:mt-6 flex flex-col gap-4">
-                <li>
-                  <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
-                      Home
-                    </p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <p className="text-bpse lg:text-lg font-normpl text-[#777777] hover:underline">
-                      Products
-                    </p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
-                      Services
-                    </p>
-                  </Link>
-                </li>
+                {footerLandingsData.map((item) => (
+                  <li key={item}>
+                    <Link href="#">
+                      <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                        {item}
+                      </p>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
@@ -53,27 +42,20 @@ const Footer = () => {
                 Company
               </h2>
               <ul className="mt-4 lg:mt-6 flex flex-col gap-4">
-                <li>
-                  <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
-                      Home
-                    </p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
-                      Careers
-                    </p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
-                      Services
-                    </p>
-                  </Link>
-                </li>
+                {footerCompanyData.map((item) => (
+                  <li>
+                    <Link href="#">
+                      <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                        {item}
+                        {item === "Career" && (
+                          <span className="py-1 text-[13px] font-bold px-2 ml-[10px] bg-[#65E4A3] text-[#0A2640] rounded-3xl">
+                            Hiring!
+                          </span>
+                        )}
+                      </p>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div>
@@ -81,27 +63,15 @@ const Footer = () => {
                 Resources
               </h2>
               <ul className="mt-4 lg:mt-6 flex flex-col gap-4">
-                <li>
-                  <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
-                      Blog
-                    </p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
-                      Products
-                    </p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
-                      Services
-                    </p>
-                  </Link>
-                </li>
+                {footerLandingsData.map((item) => (
+                  <li key={item}>
+                    <Link href="#">
+                      <p className="text-base lg:text-lg font-normal text-[#777777] hover:underline">
+                        {item}
+                      </p>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
